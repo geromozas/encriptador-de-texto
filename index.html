@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="titlePage">Encriptador de Texto</h1>
+      <img class="logo" src="./assets/Logo.png" alt="logo" />
+    </header>
+
+    <main>
+      <section>
+        <div class="boxUno">
+          <textarea
+            id="textoEncriptar"
+            type="text"
+            placeholder="Ingrese el texto aquí"
+          ></textarea>
+          <div class="condicion">
+            <img
+              class="exclamacion"
+              src="./assets/bi_exclamation-circle-fill.png"
+              alt="signo exclamación"
+            />
+            <p class="condicionText">Solo letras minúsculas y sin acentos</p>
+          </div>
+          <div class="botones">
+            <button class="botonUno" onclick="btnEncriptar()">Encriptar</button>
+            <button class="botonDos" onclick="btnDesencriptar()">
+              Desencriptar
+            </button>
+          </div>
+        </div>
+        <div class="boxDos">
+          <img class="muñeco" src="./assets/Muñeco.png" alt="" />
+          <h3>Ningun mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar</p>
+        </div>
+        <div class="boxTres hidden">
+          <textarea id="mensajeEncriptado"></textarea>
+          <button class="botonTres" onclick="btnCopiar()">Copiar</button>
+          <button class="botonCuatro" onclick="btnNuevoTexto()">
+            Nuevo texto
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p class="copyright">
+        Copyright Geronimo Mozas - 2024. Todos los derechos reservados.
+      </p>
+    </footer>
+    <script src="./js/script.js "></script>
+  </body>
+</html>

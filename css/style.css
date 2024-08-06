@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: aliceblue;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+}
+
+.titlePage {
+  font-family: "Inter", sans-serif;
+}
+
+section {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxDos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  border-radius: 32px;
+}
+
+#textoEncriptar {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  height: 304px;
+  width: 500px;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: aliceblue;
+  color: #0a3871;
+}
+
+.boxTres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  border-radius: 32px;
+  margin-top: 20px;
+}
+
+#mensajeEncriptado {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  height: 500px;
+  width: 300px;
+  border: none;
+  outline: none;
+  resize: none;
+  background-color: white;
+  color: #495057;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.muñeco {
+  width: 336px;
+  height: 304px;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  font-size: small;
+}
+
+button {
+  width: 328px;
+  height: 40px;
+  border-radius: 24px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.botonUno {
+  background-color: #0a3871;
+}
+
+.botonDos {
+  color: #0a3871;
+  border: solid 1px #0a3871;
+  margin-left: 20px;
+}
+
+.botonTres {
+  color: #0a3871;
+  border: solid 1px #0a3871;
+}
+
+.botonCuatro {
+  background-color: #0a3871;
+  border: solid 1px #0a3871;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombreado suave */
+}
+
+.condicion {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.exclamacion {
+  margin-right: 5px;
+}
+
+footer {
+  background-color: #0a3871;
+  height: 85px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 1150px) {
+  button {
+    width: 200px;
+  }
+}
+
+@media (max-width: 880px) {
+  .textoEncriptar {
+    font-size: 20px;
+  }
+  .muñeco {
+    display: none;
+  }
+  section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .boxDos {
+    margin-top: 50px;
+    height: 200px;
+  }
+  button {
+    width: 328px;
+  }
+  .boxTres {
+    height: 300px;
+  }
+  .botonTres {
+    height: 80px;
+    margin-bottom: 10px;
+  }
+  .botonCuatro {
+    height: 80px;
+  }
+}
+
+@media (max-width: 740px) {
+  .botones {
+    display: flex;
+    justify-content: center;
+  }
+  button {
+    width: 200px;
+  }
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: medium;
+  }
+  .logo {
+    width: 100px;
+  }
+  .muñeco {
+    display: none;
+  }
+  #textoEncriptar {
+    width: 250px;
+  }
+  .boxUno {
+    width: 300px;
+  }
+  .boxDos {
+    width: 300px;
+    height: 100px;
+  }
+  .condicionText {
+    font-size: 10px;
+  }
+  .muñeco {
+    width: 200px;
+  }
+  h3 {
+    font-size: small;
+  }
+  p {
+    font-size: 10px;
+  }
+  #textoEncriptar {
+    font-size: medium;
+  }
+  #mensajeEncriptado {
+    font-size: medium;
+  }
+  .botones {
+    width: 300px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 430px) {
+  .botones {
+    flex-direction: column;
+    align-items: center;
+  }
+  .botonDos {
+    margin-left: 0;
+  }
+  .exclamacion {
+    width: 10px;
+  }
+  .boxTres {
+    width: 300px;
+  }
+  #mensajeEncriptado {
+    margin-left: 30px;
+  }
+}
+
+@media (max-width: 340px) {
+  .copyright {
+    font-size: 8px;
+  }
+  .condicion {
+    justify-content: center;
+  }
+}
