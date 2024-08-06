@@ -255,6 +255,9 @@ footer {
   #mensajeEncriptado {
     margin-left: 30px;
   }
+  #mensajeEncriptado {
+    width: 250px;
+  }
 }
 
 @media (max-width: 340px) {
